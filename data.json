@@ -1,0 +1,296 @@
+{
+    "login":{
+        "name":"liangjiang",
+        "pass":"123",
+        "tocken":"123456"
+    },
+    "mainPath":{
+        "text":"首页数据",
+        "scrollbox":[
+            {
+            "img":"/static/MPimg/B01.jpg",
+            "text":"这是一号的标题",
+            "intro":"这是一号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B02.jpg",
+            "text":"这是2号的标题",
+            "intro":"这是2号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B03.jpg",
+            "text":"这是3号的标题",
+            "intro":"这是3号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B04.jpg",
+            "text":"这是4号的标题",
+            "intro":"这是4号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B05.jpg",
+            "text":"这是5号的标题",
+            "intro":"这是5号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B06.jpg",
+            "text":"这是6号的标题",
+            "intro":"这是6号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B07.jpg",
+            "text":"这是7号的标题",
+            "intro":"这是7号书的介绍",
+            "src":"这是要跳转的地址"
+            },
+            {
+            "img":"/static/MPimg/B08.jpg",
+            "text":"这是8号的标题",
+            "intro":"这是8号书的介绍",
+            "src":"这是要跳转的地址"
+            }],
+        "weeklybooks":[
+            {
+                "img":"/static/MPimg/pic07.png",
+                "text":"这是每周图书一号的标题",
+                "intro":"这是每周图书一号书的介绍",
+                "src":"这是要跳转的地址"
+            },
+            {
+                "img":"/static/MPimg/pic11.jpg",
+                "text":"这是每周图书2号的标题",
+                "intro":"这是每周图书2号书的介绍",
+                "src":"这是要跳转的地址"
+            },
+            {
+                "img":"/static/MPimg/pic15.jpg",
+                "text":"这是每周图书3号的标题",
+                "intro":"这是每周图书3号书的介绍",
+                "src":"这是要跳转的地址"
+            },
+            {
+                "img":"/static/MPimg/pic13.jpg",
+                "text":"这是每周图书4号的标题",
+                "intro":"这是每周图书4号书的介绍",
+                "src":"这是要跳转的地址"
+            },
+            {
+                "img":"/static/MPimg/pic13.jpg",
+                "text":"这是每周图书5号的标题",
+                "intro":"这是每周图书5号书的介绍",
+                "src":"这是要跳转的地址"
+            }
+        ],
+        "tops":[
+            {
+            "img":"/static/MPimg/pic03.png",
+            "type":"科幻",
+            "text":"这是科幻top1的书名",
+            "intro":"这是科幻top1的介绍，我们只要知道这是一本很厉害的书就行了，即使你没有看过塔也一定听过它的名字，即使你看不懂它也不妨碍你喜爱它没错它就是——《上海堡垒》（划掉）没错就是《三体》。",
+            "src":"这是要跳转的地址"
+        },{
+            "img":"/static/MPimg/pic04.jpg",
+            "type":"文学",
+            "text":"这是文学top1的标题",
+                "intro":"这是文学top1的介绍,上至大仲马托尔斯泰莎士比亚鲁迅老舍，下至村上春树太宰治，不论哪个国家的书本你都应该去看去学习去了解去掌握才能丰富自己。",
+                "src":"这是要跳转的地址"
+        },{
+            "img":"/static/MPimg/pic11.jpg",
+            "type":"玄幻",
+            "text":"这是每玄幻top1的标题",
+            "intro":"这是玄幻top1的介绍,即使这么多年过去了，即使希伯来神话是冷门中的冷门，但我永远爱神蛋，神蛋是我心中永远无法超越的存在。",
+            "src":"这是要跳转的地址"
+        }]
+    },
+    "weightIndex":{
+        "set4":475,
+        "hobby":"English"
+    },
+    "inputIndex":{},
+    "review":{},
+    "bookShow":{
+        "books":[
+            {
+                "name":"英语六级700分",
+                "intro":"这本书可以帮你快速通过六级",
+                "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            },
+            {
+                "name":"英语专八",
+                "intro":"这本书可以帮你通过英语专八",
+                "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            },
+            {
+                "name":"数据结构与算法",
+                "intro":"这本书详细的介绍了各种算法",
+                "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            },
+            {
+                "name":"大话数据结构",
+                "intro":"这本书以诙谐的语气帮你介绍了数据结构的学习",
+                "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            },
+            {
+                "name":"计算机系统基础",
+                "intro":"这本书很重要的",
+                "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            },
+            {
+                "name":"计算机网络",
+                "intro":"这本书也很重要",
+                "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            }],
+        "keywords":[
+            {
+                "name": "四级",
+                "value": 1500
+            },
+            {
+                "name": "六级",
+                "value": 1300
+            },
+            {
+                "name": "c#",
+                "value": 1500
+            },
+            {
+                "name": "Unity",
+                "value": 700
+            },
+            {
+                "name": "Java",
+                "value": 600
+            },
+            {
+                "name": "计算机基础",
+                "value": 550
+            },
+            {
+                "name": "计算机图形学",
+                "value": 2200
+            },
+            {
+                "name": "c#",
+                "value": 1500
+            },
+            {
+                "name": "Unity",
+                "value": 700
+            },
+            {
+                "name": "Java",
+                "value": 600
+            },
+            {
+                "name": "计算机基础",
+                "value": 550
+            },
+            {
+                "name": "编译原理",
+                "value": 520
+            },
+            {
+                "name": "matlab",
+                "value": 320
+            },
+            {
+                "name": "概率论与数理统计",
+                "value": 300
+            },
+            {
+                "name": "计算机组成原理",
+                "value": 580
+            },
+            {
+                "name": "mytlibs",
+                "value": 200
+            },
+            {
+                "name": "mysql",
+                "value": 1500
+            },
+            {
+                "name": "python",
+                "value": 1300
+            },
+            {
+                "name": "大数据",
+                "value": 1900
+            },
+            {
+                "name": "html",
+                "value": 1500
+            },
+            {
+                "name": "javasccript",
+                "value": 700
+            },
+            {
+                "name": "css",
+                "value": 600
+            },
+            {
+                "name": "phaser",
+                "value": 550
+            },
+            {
+                "name": "scss",
+                "value": 520
+            },
+            {
+                "name": "vscode",
+                "value": 320
+            },
+            {
+                "name": "android安卓",
+                "value": 300
+            },
+            {
+                "name": "西南石油大学",
+                "value": 280
+            },
+            {
+                "name": "kerno",
+                "value": 200
+            },
+            {
+                "name": "前端",
+                "value": 1500
+            },
+            {
+                "name": "微信小程序",
+                "value": 1300
+            },
+            {
+                "name": "游戏开发",
+                "value": 1900
+            },
+            {
+                "name": "shader",
+                "value": 1500
+            },
+            {
+                "name": "linux",
+                "value": 700
+            },
+            {
+                "name": "前端",
+                "value": 100
+            }
+        ]
+        
+    },
+    "starBooks":{}
+}

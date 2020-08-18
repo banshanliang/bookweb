@@ -1,0 +1,80 @@
+*{margin: 0;padding: 0;}
+.mainPath{width: 100%;height: auto;background: white;}
+.title{font-size: 20px;font-weight: bold;}
+.text{font-size: 15px;line-height: 35px;}
+/* logo */
+.banner{width: 100%;padding: 30px;border-bottom: 1px solid #aaaaaa;}
+.banner img{display: block;margin: 0 auto;}
+/* //首页菜单 */
+.MP_menu{width: 100%;height: 50px;text-align: center;}
+.MP_menu span{margin: 20px;line-height: 50px;}
+/* 轮播图 */
+.scrolling{width: 5850px;height: auto;}
+.scrolling .sc_contain,.sc_contain2{width: 5850px;position:relative;overflow:hidden; height: auto;left: -350px;}
+.scrolling .sc_buleft{text-align: center;background: rgba(255, 255, 255,0.8);width:40px;height: 40px;position: absolute;top: 370px;left: 20px;}
+.scrolling .lbt{font-size: 20px;margin-top: 10px;display: block;}
+.scrolling .sc_buright{text-align: center;background: rgba(255,255,255,0.8);width: 40px;height: 40px;position: absolute;top: 370px;right: 20px;}
+.scrolling .lbt2{font-size: 20px;margin-top: 10px;display: block;}
+.scrolling .sc_contain .sc_box{width: 450px;height: 300px;float: left;}
+.scrolling .sc_contain .sc_box img{width: 450px;height: 300px ;display: block;}
+.scrolling .sc_contain .sc_box .scroll_bt{ transition: all 0.3s linear;width: 450px;height: 80px;background: rgba(78, 76, 76,0.6);position: absolute;top: 220px;padding: 20px;}
+.scrolling .sc_contain .sc_box .scroll_bt:hover{transition: all 0.25s linear;height: 170px;top: 130px;}
+.scrolling .sc_contain .sc_box .scroll_bt .scbox_text{color: white;margin-top: 10px;}
+.scrolling .sc_contain .sc_box .scroll_bt .scbox_top{color: white;font-size: 10px;}
+.scrolling .sc_contain .sc_box .scroll_bt .scbox_intro{color: white;margin-top: 30px;}
+/* 介绍图 */
+.MP_intro{width: 976px;height: 478px;margin: 0px auto 40px;background: url('../../src/assets/border/bg01.png');}
+.MP_intro img{width: 250px;height: 250px;margin: 130px 0px 0 100px;background: rgba(245, 239, 239,0.8); padding: 10px;border-radius: 10px;}
+.MP_intro .MP_introtext{float: right;background-color: rgba(253, 253, 253,0.4);border-radius: 10px;width: 440px;height: 280px;padding: 20px;margin: 115px 95px 0 0}
+.MP_intro .MP_introtext .title{margin-bottom: 20px;}
+/* 每周推荐 */
+.weeklybook{padding-top: 10px;background: whitesmoke;box-sizing: border-box;width: 100%;height: auto;padding-bottom: 20px;}
+.weeklyspan{width: 30%;height: 50px;background: #FC0254;float: left;}
+.weeklyspan p{font-size: 25px;color: white;float: right;margin-right:20px ;line-height: 50px;}
+.weeklyspan2{width: 80px;height: 50px;background: #FC0254;float: right;margin-right: 250px;}
+.weeklyspan2 p{font-size: 35px;color: white;line-height: 50px;text-align: center;}
+.weeklyspan3{margin-bottom: 10px;font-size: 23px;width: 80px;height: 30px;background: #FC0254;color: white;padding-left: 05px;line-height: 30px;}
+.weeklybooks{height: auto;margin:0px auto;width: 1200px;padding-top: 120px;}
+.weeklybooks img{transition: all 0.15s linear;width: 100%;}
+.weeklybooks img:hover{transition: all 0.15s linear;opacity: 0.5;}
+.weeklybooks .weektitle{font-size: 20px;}
+.weeklybox1{width: 580px;height: auto;float: left;margin-right: 40px;}
+.weeklybox1 img{height:580px;}
+.weeklybox1 .weeklyspan3{margin-top: 20px;}
+.weeklybooks .weekintro{font-size: 15px;line-height: 30px;margin-top: 10px;}
+.weeklybox2,.weeklybox3,.weeklybox4,.weeklybox5{margin-bottom: 70px;}
+.weeklybox2 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
+.weeklybox2 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
+.weeklybox2 p {margin-left: 780px;}
+.weeklybox3 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
+.weeklybox3 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
+.weeklybox3 p {margin-left: 780px;}
+.weeklybox4 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
+.weeklybox4 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
+.weeklybox4 p {margin-left: 780px;}
+.weeklybox5 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
+.weeklybox5 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
+.weeklybox5 p {margin-left: 780px;}
+/* 按照分类推荐第一 */
+.tops img{display: none;width: 500px;border-radius: 10px;}
+.tops .toptitle{width: 410px;height: 140px;margin: 0 auto;}
+.toptitle p{border: rgba(255, 174, 25, 0.89) solid 3px;border-radius: 10px;background: rgb(210, 228, 155);color: white;z-index:10;margin-top: 50px;position: absolute;padding:0 20px 10px 20px;font-size: 80px;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.tops .topbg{z-index:0;color: rgba(58, 63, 61, 0.7);font-size: 90px;position: absolute;font-family:'宋体';font-weight: bold;}
+.tops .toptext{z-index:10;color:white;font-size: 50px;position: absolute;margin-top: 180px;font-family:'等线';font-style: italic;}
+.tops .tops_intro{display: none;}
+.top1{height: 460px;background-color: rgba(43, 161, 157, 0.31);padding: 30px 20px 10px 20px;}
+.top1 img{ position: absolute;z-index:0;margin-left: 80px;margin-top: 40px;}
+.tops img:hover{opacity: 0.7;}
+.top1 .toptext{color:white;font-size: 50px;position: absolute;margin-top: 180px;font-family:'等线';font-style: italic;}
+.top1 p{display: none;}
+.top1 .tops_intro{width: 600px;margin:100px 0 0 760px;font-size: 25px;line-height: 40px;}
+.top2{height: 450px;background-color: rgba(143, 158, 108, 0.51);padding: 30px 20px 10px 20px;}
+.top2 p{display: none;}
+.top2 img{ position: absolute;z-index:0;margin-left: 950px;margin-top: 40px;}
+.top2 .topbg{margin-left: 750px;}
+.top2 .toptext{margin-left: 750px;z-index:10;color:white;font-size: 50px;position: absolute;margin-top: 180px;font-family:'等线';font-style: italic;}
+.top2 .tops_intro{width: 600px;margin:100px 0 0 40px;font-size: 25px;line-height: 40px;}
+.top3{height: 450px;background-color: rgba(172, 107, 107, 0.47);padding: 30px 20px 10px 20px;margin-bottom: 0px;}
+.top3 p{display: none;}
+.top3 img{ position: absolute;z-index:0;margin-left: 80px;margin-top: 40px;}
+.top3 .tops_intro{width: 600px;margin:100px 0 0 760px;font-size: 25px;line-height: 40px;}

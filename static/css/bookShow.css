@@ -1,0 +1,18 @@
+*{margin: 0; padding: 0;}
+.bookShow{
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: white;
+}
+.wordcloud{
+    height: 400px;
+    background-color: paleturquoise;
+    background: url('../../src/assets/border/bg14.png')no-repeat;
+    background-size: 100% 400px;
+    box-sizing: border-box;
+}
+#char2 {
+    width:420px;
+    height:400px;
+    margin-left: 100px;
+}
