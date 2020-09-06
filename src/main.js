@@ -21,6 +21,7 @@ import echarts from 'echarts'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+import vueWaterfallEasy from 'vue-waterfall-easy'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
@@ -33,7 +34,8 @@ new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
+  components: { 
+    App },
   template: '<App/>',
   render: h => h(App)
   

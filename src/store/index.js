@@ -4,15 +4,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state:{
-      // name:'',//用户姓名
-      // pass:'',//用户密码
-      // tocken:''//用户tocken
+      // user_name:'',//用户姓名（即登录账户）
+      // authority'',//用户权限
+      // token:''//用户tocken
     },
     mutations:{
       upuser(state,data){//修改state里面的user数据
-        state.name=data.name;
-        state.pass=data.pass;
-        state.tocken=data.tocken
+        state.user_name=data.user_name;
+        state.token=data.token;
+        state.authority=data.authority;
       }
     }
   })

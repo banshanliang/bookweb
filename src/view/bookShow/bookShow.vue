@@ -1,31 +1,73 @@
 <template>
 <div class="bookShow">
-    <div class="wordcloud">
+    <el-form label-width="130px" :inline="true" style="padding:10px 10px 0 10px" v-if="this.$store.state.authority=='admin'">
+        <el-form-item label="输入学号："  prop="desc" style="margin-bottom:1px">
+                <el-input type="text"   label="输入学号  ："  class="resizeNone" v-model="sno" placeholder="请输入学号"></el-input>
+        </el-form-item>
+        <el-form-item>
+            <el-button type="primary" icon="el-icon-search" @click="handleClick">查询</el-button>
+          </el-form-item>
+    </el-form>
+
+    <div class="wordcloud" v-if="showbook">
        <div id="char2" ref="chart2"></div>   
-       <div class="wcText"></div>
+       <div class="wcText"> 根据您的词云图结果，我们分析得出您兴趣权重偏向于计算机类，并致力于前端开发与游戏开发。我们将为您展示出您的适合书籍 </div>
+    </div>
+    <div id="content">
+    <vue-waterfall-easy :imgsArr="imgsArr"
+                  	:gap="20"
+                    :height="800"
+                    :loadingDotCount='0'
+                    :maxCols="4"
+                    :imgWidth='340'>
+        <div slot-scope="props" class="waterfallbox">
+            <p v-html="props.value.info"></p>
+        </div>
+    </vue-waterfall-easy>
     </div>
 </div>
 </template>
 <script>
-import{getShow}from'../../url.js'
-//导入echart包制作词云图
+import{getwordsCloud,showBooks}from'../../url.js'
+//导入echart包制作词云图 
 import "echarts-wordcloud/dist/echarts-wordcloud";
 import "echarts-wordcloud/dist/echarts-wordcloud.min";
 var echarts = require('echarts');
 require('echarts-wordcloud');
+import vueWaterfallEasy from 'vue-waterfall-easy'
+
 
 export default {
+  components: {
+    vueWaterfallEasy
+  },
    data(){
        return{
-           books:'',
-           keywords:[],
-    
+           books:'',//推荐的书
+           keywords:[],//词云图
+           sno:'',//查询的学号
+           showbook:true,//推荐书展示页面
+           group:0,
+           imgsArr: [],//存放已加载图片数组
        }
    },
    methods:{
-       getData(){//渲染首页的数据
-         getShow().then(res=>{
-            this.books=res.data.books;
+    getData() {
+       showBooks().then(res => {
+          this.imgsArr = []
+         var datalist=res.data.books
+          for (var i = 0; i < datalist.length; i++) {
+            this.imgsArr.push({ src:datalist[i].img, link: '', info: `<div class="ant-card-body1">${datalist[i].text}</div><div class="ant-card-body2">${datalist[i].intro}</div>` })
+            //src为加载的图片的地址、link为超链接的链接地址、info为自定义的图片展示信息，我这里因为是使用的ant-design的card样式，所以我复制了card展示时的代码到info中，大家可以根据自己的情况自行填写
+          }
+        },
+        err => {
+          this.$message.error("系统异常，请稍后重试");
+        }
+      );
+     },
+       getDatacloud(){//获取词云图数据
+         getwordsCloud().then(res=>{
             this.keywords=res.data.keywords;
             //渲染词云图数据
             this.getinitcloud();
@@ -70,12 +112,21 @@ export default {
             }
 
                 
-        }
+        },
+    handleClick(){}//点击查询
    },
    mounted(){
-       this.getData()//加载时渲染数据
+       this.getDatacloud()//加载时渲染数据
+       this.getData();
    }
 }
 </script>
 <style lang="scss" src='../../../static/css/bookShow.css'>
+.resizeNone{
+   .el-textarea__inner{ //el_input中的隐藏属性
+         resize: none;  //主要是这个样式
+         height: 40px;
+         margin-bottom: 10px;
+     }   
+ }
 </style>

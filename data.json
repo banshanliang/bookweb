@@ -1,8 +1,7 @@
 {
     "login":{
-        "name":"liangjiang",
-        "pass":"123",
-        "tocken":"123456"
+        "tocken":"c2a0b1i8d3b1a0g6b1e4b1d3",
+        "authority":"admin"
     },
     "mainPath":{
         "text":"首页数据",
@@ -117,39 +116,75 @@
     "bookShow":{
         "books":[
             {
-                "name":"英语六级700分",
+                "text":"英语六级700分",
                 "intro":"这本书可以帮你快速通过六级",
                 "img":"/static/MPimg/pic03.png",
                 "src":"这是跳转的地址"
             },
             {
-                "name":"英语专八",
+                "text":"英语专八",
                 "intro":"这本书可以帮你通过英语专八",
                 "img":"/static/MPimg/pic03.png",
                 "src":"这是跳转的地址"
             },
             {
-                "name":"数据结构与算法",
+                "text":"数据结构与算法",
                 "intro":"这本书详细的介绍了各种算法",
-                "img":"/static/MPimg/pic03.png",
+                "img":"/static/MPimg/B04.jpg",
                 "src":"这是跳转的地址"
             },
             {
-                "name":"大话数据结构",
+                "text":"大话数据结构",
                 "intro":"这本书以诙谐的语气帮你介绍了数据结构的学习",
-                "img":"/static/MPimg/pic03.png",
+                "img":"/static/MPimg/B05.jpg",
                 "src":"这是跳转的地址"
             },
             {
-                "name":"计算机系统基础",
+                "text":"计算机系统基础",
                 "intro":"这本书很重要的",
+                "img":"/static/MPimg/B06.jpg",
+                "src":"这是跳转的地址"
+            },
+            {
+                "text":"计算机网络",
+                "intro":"这本书也很重要",
+                "img":"/static/MPimg/B07.jpg",
+                "src":"这是跳转的地址"
+            },
+            {
+                "text":"英语六级700分",
+                "intro":"这本书可以帮你快速通过六级",
                 "img":"/static/MPimg/pic03.png",
                 "src":"这是跳转的地址"
             },
             {
-                "name":"计算机网络",
-                "intro":"这本书也很重要",
+                "text":"英语专八",
+                "intro":"这本书可以帮你通过英语专八",
                 "img":"/static/MPimg/pic03.png",
+                "src":"这是跳转的地址"
+            },
+            {
+                "text":"数据结构与算法",
+                "intro":"这本书详细的介绍了各种算法",
+                "img":"/static/MPimg/B04.jpg",
+                "src":"这是跳转的地址"
+            },
+            {
+                "text":"大话数据结构",
+                "intro":"这本书以诙谐的语气帮你介绍了数据结构的学习",
+                "img":"/static/MPimg/B05.jpg",
+                "src":"这是跳转的地址"
+            },
+            {
+                "text":"计算机系统基础",
+                "intro":"这本书很重要的",
+                "img":"/static/MPimg/B06.jpg",
+                "src":"这是跳转的地址"
+            },
+            {
+                "text":"计算机网络",
+                "intro":"这本书也很重要",
+                "img":"/static/MPimg/B07.jpg",
                 "src":"这是跳转的地址"
             }],
         "keywords":[

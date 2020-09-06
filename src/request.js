@@ -6,6 +6,7 @@ export default (url, options={}) => {
       method: 'get',
       headers: {
         Accept: 'application/json',
+        dataType: "json",
         'Content-Type': 'application/json; charset=utf-8'
       }
     }

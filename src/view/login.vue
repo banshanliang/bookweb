@@ -25,20 +25,24 @@ export default {
    data(){
        return{
             user:{
-               name:'',
-               pass:'',
-               tocken:''
+               user_name:'',
+               user_pass:'',
+               token:'',
+               authority:''
             }
        }
    },
    methods:{
        uplogin(){
-           this.user.name=$('.i1').val();
-           this.user.pass=$('.i2').val();
+           this.user.user_name=$('.i1').val();
+           this.user.user_pass=$('.i2').val();
            gettocken(this.user).then(res=>{
-               this.$store.commit('upuser',res.data)//更改tocken
+               this.user.token=res.data.token
+               this.user.authority=res.data.authority
+               this.$store.commit('upuser',this.user)//更改全局tocken、authority与user_name
                this.$router.push('/mainPath');//跳转路由
                this.$message.success('登录成功')
+               console.log(this.$store.state)
            })
            .catch(err=>{
                console.log(err);

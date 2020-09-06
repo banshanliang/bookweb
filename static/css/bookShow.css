@@ -15,4 +15,27 @@
     width:420px;
     height:400px;
     margin-left: 100px;
+    float: left;
+}
+.wcText{
+    width:700px;
+    float: right;
+    height: 200px;
+    padding:10px;
+    margin:100px 100px;
+    background-color: wheat;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#content{   
+    width:100%;
+  }
+.waterfallbox{
+padding:10px;
+}
+.ant-card-body1{
+    font:18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
