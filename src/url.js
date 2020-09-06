@@ -29,3 +29,8 @@ export const changePass = () =>{
     // /apis/bookShow
     return request('https://result.eolinker.com/2fRP7UD5312f15ed1a33a5f98f2de438d5eaa71aa96b771?uri=/api/changePass')
 }
+
+export const inputData = () =>{
+    // /apis/bookShow
+    return request('https://result.eolinker.com/2fRP7UD5312f15ed1a33a5f98f2de438d5eaa71aa96b771?uri=/api/inputData')
+}

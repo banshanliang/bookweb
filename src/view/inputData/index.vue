@@ -7,11 +7,10 @@
 	<el-form-item>
 		<el-upload
         ref="upload"
-        :on-success="submitUpload"
-        action="/"
+		action=""
+        :on-change="submitUpload"
         :show-file-list="false"
-        :auto-upload="false"
-		accept=".excel, .xls, .xlsx">
+        :auto-upload="false">
         <el-button icon="el-icon-upload" type="success">上传文件</el-button>
     </el-upload>
 	</el-form-item>
@@ -29,7 +28,6 @@
 		  border
           height="500"
           highlight-current-row
-          @cell-click="handleCellClick"
 		  :header-cell-style="tableHeaderColor"
           >
 		  <el-table-column type="index" width="80" label="序号"></el-table-column>
@@ -42,13 +40,13 @@
 </div>
 </template>
 <script>
+import{inputData}from'../../url.js'
 import XLSX from 'xlsx';
 export default {
    name:'inputData_index',
    data(){
        return{
-		   listData:[],
-		   attach:''
+		   listData:[]
 	   }
    },
    methods:{
@@ -57,22 +55,18 @@ export default {
 		   window.location.href="../../../static/学生信息.xlsx"
 		   },
        submitUpload(file){ 
-		//    console.log('啊什么东西',res)
-		//    if (res.code === 1000){ //当后台判断格式正确
-					// this.attach = res.data;//保存atatch
-					const types = file.name.split('.')[1]
-	    			const fileType = ['xlsx', 'xlc', 'xlm', 'xls', 'xlt', 'xlw', 'csv'].some(item => item === types)
-	    			if (!fileType) {
-	    			this.$message('格式错误！请重新选择')
-	    			return
-	    			}
-	    			this.file2Xce(file).then(tabJson => {
-	    			if (tabJson && tabJson.length > 0) {
-					this.listData=tabJson[0]
-		   			console.log('数据', this.listData)
-	      			}
-	    			})
-                // }
+        const types = file.name.split('.')[1]
+	    const fileType = ['xlsx', 'xlc', 'xlm', 'xls', 'xlt', 'xlw', 'csv'].some(item => item === types)
+	    if (!fileType) {
+	    this.$message('格式错误！请重新选择')
+	    return
+	    }
+	    this.file2Xce(file).then(tabJson => {
+	    if (tabJson && tabJson.length > 0) {
+		this.listData=tabJson[0]
+		   console.log('数据', this.listData)
+	      }
+	    })
 	   },
 	   file2Xce(file) {  
 	      return new Promise(function(resolve, reject) {
@@ -96,11 +90,9 @@ export default {
                 return 'background-color:lightblue;color:#fff;font-wight:500;font-size:18px;text-align:center'
 
             },
-	   handleCellClick(){},
-	   addstudent(){//确认录入
-
+	   addstudent(){
+		   inputData(this.listData)
 	   }
-	   
    
    
    }
