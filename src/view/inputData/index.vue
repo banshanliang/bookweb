@@ -91,7 +91,12 @@ export default {
 
             },
 	   addstudent(){
-		   inputData(this.listData)
+		   inputData(this.listData).then(res=>{
+			   console.log(res)
+		   })
+		   .catch(err=>{
+			   console.log(err)
+		   })
 	   }
    
    
