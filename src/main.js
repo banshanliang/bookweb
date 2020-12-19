@@ -5,10 +5,10 @@ import router from './router'
 import Vuex from 'vuex'
 import store from './store'
 //配置element
-import ElementUI from 'element-ui'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
   //导入图标
 import '@/assets/icon/iconfont.css'
-import 'element-ui/lib/theme-chalk/index.css';
 
 //配置jquery
 import $ from 'jquery'

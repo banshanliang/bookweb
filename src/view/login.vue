@@ -4,13 +4,19 @@
         <img src="/static/MPimg/mainPath_logo.png">
     </div>
     <div class="login">
+        <div class="icon_menu3">
+                <p id="linkabout2" href="">书卷多情似故人</p>
+            </div>
+            <div class="icon_menu4">
+                <p id="linkabout" href="">晨昏忧乐每相亲</p>
+            </div>
         <div class="loginbox">
             <p class="title">登 录</p>
             <div class="inputs">
                 <form>
-                <span class="s1">账号</span>
+                <span class="s1 el-icon-user"> 账号</span>
                 <input type="text" class="i i1">
-                <span class="s1">密码</span>
+                <span class="s1 el-icon-arrow-right"> 密码</span>
                 <input type="password" class="i i2" autocomplete="off"></form>
             </div>
             <button class="ok" @click="uplogin">确认</button>
@@ -36,6 +42,9 @@ export default {
        uplogin(){
            this.user.user_name=$('.i1').val();
            this.user.user_pass=$('.i2').val();
+           if(!this.user.user_pass || !this.user.user_name)
+           this.$message.error('请输入账号密码')
+           else
            gettocken(this.user).then(res=>{
                this.user.token=res.data.token
                this.user.authority=res.data.authority
@@ -52,6 +61,31 @@ export default {
 }
 </script>
 <style lang='scss'>
+.icon_menu3{
+    margin-left: 550px;
+    margin-top: 30px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-right: solid 1.5px  #3d5a80;
+    border-bottom: solid 1.5px  #3d5a80;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.icon_menu4{
+    
+    margin-left: 50px;
+    margin-top: 70px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-right: solid 1.5px  #3d5a80;
+    border-bottom: solid 1.5px  #3d5a80;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
 .logo{
     width: 100%;
     height: 80px;
@@ -95,7 +129,7 @@ export default {
     margin-left: 10px;
     margin-bottom: 30px;
     height: 30px;
-    width: 200px;
+    width: 180px;
     border: 1.5px solid rgba(243, 174, 45,0.8);
     border-radius: 5px;;
     outline: none;
@@ -111,5 +145,35 @@ export default {
     background: lemonchiffon;
     color: gray;
     outline: none;
+}
+.icon_menu3 p{
+    font-family: '方正手写体1';
+    color: #3d5a80;
+    font-size: 25px;
+    transition: color .5;
+    -webkit-transition: all .5s; 
+    -moz-transition: all .5s; 
+    -ms-transition: all .5s; 
+    -o-transition: all .5s; 
+
+}
+.icon_menu4 p{
+    font-family: '方正手写体1';
+    color: #3d5a80;
+    font-size: 25px;
+    transition: color .5;
+    -webkit-transition: all .5s; 
+    -moz-transition: all .5s; 
+    -ms-transition: all .5s; 
+    -o-transition: all .5s; 
+
+}
+.icon_menu3 p:hover{
+        font-size: 30px;
+    color: #98c1d9;
+}
+.icon_menu4 p:hover{
+        font-size: 30px;
+    color: #98c1d9;
 }
 </style>

@@ -10,80 +10,93 @@
             "img":"/static/MPimg/B01.jpg",
             "text":"这是一号的标题",
             "intro":"这是一号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B02.jpg",
             "text":"这是2号的标题",
             "intro":"这是2号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B03.jpg",
             "text":"这是3号的标题",
             "intro":"这是3号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B04.jpg",
             "text":"这是4号的标题",
             "intro":"这是4号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B05.jpg",
             "text":"这是5号的标题",
             "intro":"这是5号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B06.jpg",
             "text":"这是6号的标题",
             "intro":"这是6号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B07.jpg",
             "text":"这是7号的标题",
             "intro":"这是7号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             },
             {
             "img":"/static/MPimg/B08.jpg",
             "text":"这是8号的标题",
             "intro":"这是8号书的介绍",
-            "src":"这是要跳转的地址"
+            "reason":"推荐不需要理由好看就行了",
+            "src":"http://www.baidu.com"
             }],
         "weeklybooks":[
             {
                 "img":"/static/MPimg/pic07.png",
-                "text":"这是每周图书一号的标题",
+                "text":"这是每周图书一号的标题惹",
                 "intro":"这是每周图书一号书的介绍",
-                "src":"这是要跳转的地址"
+                "reason":"推荐不需要理由好看就行了",
+                "src":"http://www.baidu.com"
             },
             {
                 "img":"/static/MPimg/pic11.jpg",
                 "text":"这是每周图书2号的标题",
                 "intro":"这是每周图书2号书的介绍",
-                "src":"这是要跳转的地址"
+                "reason":"推荐不需要理由好看就行了",
+                "src":"http://www.baidu.com"
             },
             {
                 "img":"/static/MPimg/pic15.jpg",
                 "text":"这是每周图书3号的标题",
                 "intro":"这是每周图书3号书的介绍",
-                "src":"这是要跳转的地址"
+                "reason":"推荐不需要理由好看就行了",
+                "src":"http://www.baidu.com"
             },
             {
                 "img":"/static/MPimg/pic13.jpg",
                 "text":"这是每周图书4号的标题",
                 "intro":"这是每周图书4号书的介绍",
-                "src":"这是要跳转的地址"
+                "reason":"推荐不需要理由好看就行了",
+                "src":"http://www.baidu.com"
             },
             {
                 "img":"/static/MPimg/pic13.jpg",
                 "text":"这是每周图书5号的标题",
                 "intro":"这是每周图书5号书的介绍",
-                "src":"这是要跳转的地址"
+                "reason":"推荐不需要理由好看就行了",
+                "src":"http://www.baidu.com"
             }
         ],
         "tops":[

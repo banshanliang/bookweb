@@ -1,0 +1,12 @@
+@font-face {  
+    font-family: '方正手写体1';
+    src: url('FZSJ.ttf');
+   }
+@font-face {  
+    font-family: '英文手写花体';
+    src: url('ssywht.ttf');
+   }
+   @font-face {  
+    font-family: '真宗盛典楷书';
+    src: url('zzsdks.ttf');
+   } 

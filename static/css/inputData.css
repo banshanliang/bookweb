@@ -1,0 +1,26 @@
+
+    .el-divider__text { font-family: "方正手写体1";font-size:25px;color: black;background-color: #fef9ef;background-image:url('../MPimg/wl01.jpg')}
+    .el-divider{margin-bottom:30px;background-color: #5bc0be;}
+    .icon_menu3{
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-right: solid 1.5px  #3d5a80;
+        border-bottom: solid 1.5px  #3d5a80;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+    }.icon_menu3 span{
+        color: #3d5a80;
+        font-size: 25px;
+        transition: color .5;
+        -webkit-transition: all .5s; 
+        -moz-transition: all .5s; 
+        -ms-transition: all .5s; 
+        -o-transition: all .5s; 
+    
+    }
+    .icon_menu3 span:hover{
+            font-size: 30px;
+        color: #98c1d9;
+    }
