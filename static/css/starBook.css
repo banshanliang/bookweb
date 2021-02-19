@@ -5,6 +5,11 @@
     width: 100%;
     padding-left: 20px;
     height: 100%;
+    /* background-color: blue; */
+    background-image: url('../MPimg/dark-tr.svg');
+    background-position: top right;
+     background-repeat: no-repeat;
+    /*background-size: 100% 100%;background-attachment: fixed; */
 }
 .el-divider__text { font-family: "方正手写体1";font-size:24px;color: black;background-color: #fef9ef;background-image:url('../MPimg/wl01.jpg')}
 .myzpbox{

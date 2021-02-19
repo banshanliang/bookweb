@@ -7,19 +7,23 @@
       <span>每日推荐</span><span>您的图书</span><span>每周榜首</span
       ><span>top books</span>
     </div>
-    
+
     <el-row>
       <el-carousel :interval="5000" type="card" height="300px">
-    <el-carousel-item v-for="item in scrollbox" :key="item.name" style="background:gray;">
-      <img :src="item.img" style="width:780px;height: 300px">
-            <div class="scroll_bt">
-               <p class="scbox_top">图书推荐</p>
-               <p class="scbox_text">{{item.text}}</p>
-               <p class="scbox_intro">{{item.intro}}</p>
-            </div>
-    </el-carousel-item>
-  </el-carousel>
-  <el-divider>书痴者文必工，艺痴者技必良</el-divider>
+        <el-carousel-item
+          v-for="item in scrollbox"
+          :key="item.name"
+          style="background: gray"
+        >
+          <img :src="item.img" style="width: 780px; height: 300px" />
+          <div class="scroll_bt">
+            <p class="scbox_top">图书推荐</p>
+            <p class="scbox_text">{{ item.text }}</p>
+            <p class="scbox_intro">{{ item.intro }}</p>
+          </div>
+        </el-carousel-item>
+      </el-carousel>
+      <el-divider>书痴者文必工，艺痴者技必良</el-divider>
     </el-row>
     <div class="MP_intro">
       <img src="/static/MPimg/pic01.png" />
@@ -36,31 +40,59 @@
       <div class="weeklybooks">
         <div class="weeklybox1" @click="bookmess(0)">
           <img :src="this.weeklybooks[0].img" />
-          <p class="weeklyspan3 iconfont bookoffice"> 1</p>
+          <div class="weeklyspan3 iconfont bookoffice">1
+            <p class="iconfire iconfont bookfavorites">
+            <span
+              style="font-size: 20px; margin-left: 10px; font-family: '仿宋'"
+              >热度{{ this.weeklybooks[0].fire }}40</span
+            >
+          </p></div>
+          
+
           <p class="weektitle">{{ this.weeklybooks[0].text }}</p>
           <p class="weekintro">{{ this.weeklybooks[0].intro }}</p>
         </div>
         <div class="weeklybox2" @click="bookmess(1)">
           <img :src="this.weeklybooks[1].img" />
-          <p class="weeklyspan3 iconfont bookoffice"> 2</p>
+          <div class="weeklyspan3 iconfont bookoffice"> 2 <i class="iconfire iconfont bookfavorites">
+            <span
+              style="font-size: 20px; margin-left: 10px; font-family: '仿宋'"
+              >热度{{ this.weeklybooks[0].fire }}40</span
+            >
+          </i></div>
           <p class="weektitle">{{ this.weeklybooks[1].text }}</p>
           <p class="weekintro">{{ this.weeklybooks[1].intro }}</p>
         </div>
         <div class="weeklybox3" @click="bookmess(2)">
           <img :src="this.weeklybooks[2].img" />
-          <p class="weeklyspan3 iconfont bookoffice"> 3</p>
+          <div class="weeklyspan3 iconfont bookoffice">3<i class="iconfire iconfont bookfavorites">
+            <span
+              style="font-size: 20px; margin-left: 10px; font-family: '仿宋'"
+              >热度{{ this.weeklybooks[0].fire }}40</span
+            >
+          </i></div>
           <p class="weektitle">{{ this.weeklybooks[2].text }}</p>
           <p class="weekintro">{{ this.weeklybooks[2].intro }}</p>
         </div>
         <div class="weeklybox4" @click="bookmess(3)">
           <img :src="this.weeklybooks[3].img" />
-          <p class="weeklyspan3 iconfont bookoffice"> 4</p>
+          <div class="weeklyspan3 iconfont bookoffice">4 <i class="iconfire iconfont bookfavorites">
+            <span
+              style="font-size: 20px; margin-left: 10px; font-family: '仿宋'"
+              >热度{{ this.weeklybooks[0].fire }}40</span
+            >
+          </i></div>
           <p class="weektitle">{{ this.weeklybooks[3].text }}</p>
           <p class="weekintro">{{ this.weeklybooks[3].intro }}</p>
         </div>
         <div class="weeklybox5" @click="bookmess(4)">
           <img :src="this.weeklybooks[4].img" />
-          <p class="weeklyspan3 iconfont bookoffice"> 5</p>
+          <div class="weeklyspan3 iconfont bookoffice">5 <i class="iconfire iconfont bookfavorites">
+            <span
+              style="font-size: 20px; margin-left: 10px; font-family: '仿宋'"
+              >热度{{ this.weeklybooks[0].fire }}40</span
+            >
+          </i></div>
           <p class="weektitle">{{ this.weeklybooks[4].text }}</p>
           <p class="weekintro">{{ this.weeklybooks[4].intro }}</p>
         </div>
@@ -95,22 +127,56 @@
       :visible.sync="bookmessShow"
       center
       width="950px"
-      >
+    >
       <el-form label-width="120px" style="width: 100%; height: 400px">
-          <el-col :span="10">
-            <el-form-item  label="图书名称" style="margin-bottom: 10px;font-weight:bold"><i class="iconfont bookform"></i> {{this.item.text}}</el-form-item>
-            <el-form-item  label="图书简介" style="margin-bottom: 10px;font-weight:bold"><i class="iconfont bookoffice"></i> {{this.item.intro}}</el-form-item>
-            <el-form-item  label="推荐理由" style="margin-bottom: 10px;font-weight:bold"><i class="iconfont bookgood"></i> {{this.item.reason}}</el-form-item>
-            <el-form-item  label="跳转地址" style="margin-bottom: 10px;font-weight:bold"><i class="iconfont booklink"></i> <a :href="item.src" target="_blank" style="color:#00F">外部图书推荐网址</a></el-form-item>
-            <el-form-item  style="margin-bottom: 10px;font-weight:bold">
-               <el-button icon="el-icon-star-on" type="primary" v-if="!this.item.hasStared" @click="addStar" >收藏</el-button>
-               <el-button icon="el-icon-star-off" type="primary" v-if="this.item.hasStared" @click="removeStar">已经收藏</el-button>            
-             </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item style="margin-bottom: 10px">
-              <div class="kuang">
-                <div
+        <el-col :span="10">
+          <el-form-item
+            label="图书名称"
+            style="margin-bottom: 10px; font-weight: bold"
+            ><i class="iconfont bookform"></i>
+            {{ this.item.text }}</el-form-item
+          >
+          <el-form-item
+            label="图书简介"
+            style="margin-bottom: 10px; font-weight: bold"
+            ><i class="iconfont bookoffice"></i>
+            {{ this.item.intro }}</el-form-item
+          >
+          <el-form-item
+            label="推荐理由"
+            style="margin-bottom: 10px; font-weight: bold"
+            ><i class="iconfont bookgood"></i>
+            {{ this.item.reason }}</el-form-item
+          >
+          <el-form-item
+            label="跳转地址"
+            style="margin-bottom: 10px; font-weight: bold"
+            ><i class="iconfont booklink"></i>
+            <a :href="item.src" target="_blank" style="color: #00f"
+              >外部图书推荐网址</a
+            ></el-form-item
+          >
+          <el-form-item style="margin-bottom: 10px; font-weight: bold">
+            <el-button
+              icon="el-icon-star-on"
+              type="primary"
+              v-if="!this.item.hasStared"
+              @click="addStar"
+              >收藏</el-button
+            >
+            <el-button
+              icon="el-icon-star-off"
+              type="primary"
+              v-if="this.item.hasStared"
+              @click="removeStar"
+              >已经收藏</el-button
+            >
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item style="margin-bottom: 10px">
+            <div class="kuang">
+              <div
                 style="
                   position: relative;
                   width: 100px;
@@ -123,10 +189,9 @@
                 <img
                   :src="item.img"
                   style="width: 300px; height: 300px; vertical-align: bottom"
-                /></div>
+                />
               </div>
-              </el-form-item
-          ></el-col></el-form
+            </div> </el-form-item></el-col></el-form
     ></el-dialog>
   </div>
 </template>
@@ -145,12 +210,12 @@ export default {
     };
   },
   methods: {
-     addStar(){
-        this.$message.success('收藏成功')
-     },
-     removeStar(){
-        this.$message.success('移除成功');
-     },
+    addStar() {
+      this.$message.success("收藏成功");
+    },
+    removeStar() {
+      this.$message.success("移除成功");
+    },
     getData() {
       //渲染首页的数据
       getmainPath().then((res) => {
@@ -159,7 +224,7 @@ export default {
         this.tops = res.data.tops;
       });
     },
-    
+
     bookmess(num) {
       this.bookmessShow = true;
       this.item = this.weeklybooks[num];

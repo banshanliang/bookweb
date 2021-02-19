@@ -11,7 +11,11 @@
   }
   .el-tabs--border-card{
       background-color:#f7ede2;
-      background-image:url('../MPimg/wl01.jpg');
+      background-image:url('../MPimg/dark-tl.svg'),url('../MPimg/dark-tr.svg'),url('../MPimg/wl01.jpg'),;
+      /* background-image: ; */
+      background-position: top left, top right;
+      background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+      background-size: 25em, 25em, auto, cover;
       margin: 10px;
   }
   .introbox

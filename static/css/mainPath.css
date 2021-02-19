@@ -1,9 +1,12 @@
 *{margin: 0;padding: 0;}
-.mainPath{width: 100%;height: auto;background: white;}
+.mainPath{
+  width: 100%;height: auto;;}
 .title{font-size: 20px;font-weight: bold;}
 .text{font-size: 15px;line-height: 35px;}
 /* logo */
-.banner{width: 100%;padding: 30px;border-bottom: 1px solid #aaaaaa;}
+.banner{width: 100%;padding: 30px;border-bottom: 1px solid #aaaaaa;background-image: url('../MPimg/dark-tl.svg'),url('../MPimg/dark-tr.svg');
+  background-position:top left, top right;
+   background-repeat: no-repeat,no-repeat;}
 .banner img{display: block;margin: 0 auto;}
 /* //首页菜单 */
 .MP_menu{width: 100%;height: 50px;text-align: center;}
@@ -26,39 +29,40 @@
     background-color: #d3dce6;
   }
 /* 介绍图 */
-.MP_intro{width: 976px;height: 478px;margin: 0px auto 40px;background: url('../../src/assets/border/bg01.png');}
+.MP_intro{width: 976px;height: 478px;margin: 0px auto 40px;background: url('../../src/assets/border/bg01.png'),url('../MPimg/intro.svg');}
 .MP_intro img{width: 250px;height: 250px;margin: 130px 0px 0 100px;background: rgba(245, 239, 239,0.8); padding: 10px;border-radius: 10px;}
 .MP_intro .MP_introtext{float: right;background-color: rgba(253, 253, 253,0.4);border-radius: 10px;width: 440px;height: 280px;padding: 20px;margin: 115px 95px 0 0}
 .MP_intro .MP_introtext .title{margin-bottom: 10px;}
 .MP_intro .MP_introtext .text{font-family: "方正手写体1";font-size: 20px;}
 /* 每周推荐 */
+.iconfire{background-color:white;padding:0 5px;display:inline;margin:30px 0 0 10px;font-size: 025px;color: #fe6d73;font-weight:bold;font-family:"等线";}
 .weeklybook{padding-top: 10px;background: whitesmoke;box-sizing: border-box;width: 100%;height: auto;padding-bottom: 20px;background-image: url('../MPimg/wl01.jpg');}
 .weeklyspan{width: 30%;height: 50px;background: #fe6d73;float: left;}
 .weeklyspan p{font-size: 25px;color: white;float: right;margin-right:20px ;line-height: 50px;}
 .weeklyspan2{width: 80px;height: 50px;background: #fe6d73;float: right;margin-right: 250px;}
 .weeklyspan2 p{font-size: 35px;color: white;line-height: 50px;text-align: center;}
-.weeklyspan3{margin-bottom: 10px;font-size: 23px;width: 80px;height: 30px;background: #fe6d73;color: white;padding-left: 05px;line-height: 30px;}
+.weeklyspan3{padding-top: 2px;margin-bottom: 10px;font-size: 23px;width: 180px;height: 35px;background: #fe6d73;color: white;padding-left: 05px;line-height: 30px;}
 .weeklybooks{height: auto;margin:0px auto;width: 1200px;padding-top: 120px;}
 .weeklybooks img{transition: all 0.15s linear;width: 100%;}
 .weeklybooks img:hover{transition: all 0.15s linear;opacity: 0.5;}
 .weeklybooks .weektitle{font-size: 20px;}
 .weeklybox1{width: 580px;height: auto;float: left;margin-right: 40px;}
 .weeklybox1 img{height:580px;}
-.weeklybox1 .weeklyspan3{margin-top: 20px;}
+.weeklybox1 .weeklyspan3{margin-top: 20px; padding-top: 2px;}
 .weeklybooks .weekintro{font-size: 15px;line-height: 30px;margin-top: 10px;}
 .weeklybox2,.weeklybox3,.weeklybox4,.weeklybox5{margin-bottom: 70px;}
 .weeklybox2 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
 .weeklybox2 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
-.weeklybox2 p {margin-left: 780px;}
+.weeklybox2 div {margin-left: 780px;}.weeklybox2 p {margin-left: 780px;}
 .weeklybox3 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
 .weeklybox3 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
-.weeklybox3 p {margin-left: 780px;}
+.weeklybox3 div {margin-left: 780px;}.weeklybox3 p {margin-left: 780px;}
 .weeklybox4 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
 .weeklybox4 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
-.weeklybox4 p {margin-left: 780px;}
+.weeklybox4 div {margin-left: 780px;}.weeklybox4 p {margin-left: 780px;}
 .weeklybox5 img{transition: all 0.15s linear;width: 150px;height: 150px;float: left;}
 .weeklybox5 img:hover{transition: all 0.15s linear;width: 140px;height: 140px;}
-.weeklybox5 p {margin-left: 780px;}
+.weeklybox5 div {margin-left: 780px;}.weeklybox5 p {margin-left: 780px;}
 /* 按照分类推荐第一 */
 .tops img{display: none;width: 500px;border-radius: 10px;}
 .tops .toptitle{width: 410px;height: 140px;margin: 0 auto;}

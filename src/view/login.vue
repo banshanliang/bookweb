@@ -38,6 +38,14 @@ export default {
             }
        }
    },
+   mounted(){
+       console.log('测试')
+        let origin = [1,2,[3,4,[6,7]],5];
+        let s = origin.flat();
+    //    s=s.replace(/,/g,'');
+       console.log(s);
+       console.log(typeof s);
+   },
    methods:{
        uplogin(){
            this.user.user_name=$('.i1').val();
